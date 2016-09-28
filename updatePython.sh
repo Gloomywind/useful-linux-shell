@@ -7,7 +7,7 @@ cd Python-2.7.12
 ./configure --prefix=/usr/local
 make altinstall
 mv /usr/bin/python /usr/bin/python2.6.6
-ln -s /usr/local/bin/python2.7 /usr/bin/python
+ln -s -f /usr/local/bin/python2.7 /usr/bin/python
 sed -i 's/#!\/usr\/bin\/python/#!\/usr\/bin\/python2.6.6/g' /usr/bin/yum
 
 wget https://pypi.python.org/packages/f7/94/eee867605a99ac113c4108534ad7c292ed48bf1d06dfe7b63daa51e49987/setuptools-28.0.0.tar.gz
@@ -18,4 +18,4 @@ wget https://pypi.python.org/packages/e7/a8/7556133689add8d1a54c0b14aeff0acb03c6
 tar -xvf pip-8.1.2.tar.gz
 cd pip-8.1.2
 python setup.py install
-ln -s /usr/local/bin/pip2.7 /usr/bin/pip
+ln -s -f /usr/local/bin/pip2.7 /usr/bin/pip
