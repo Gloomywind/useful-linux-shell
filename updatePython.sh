@@ -1,5 +1,5 @@
 #!/bin/bash
-yum install -y zlib-devel bzip2-devel xz-libs wget openssl openssl-devel gcc gcc-c++ autoconf automake
+yum install -y zlib-devel bzip2-devel xz-libs wget openssl openssl-devel gcc gcc-c++ autoconf automake sqlite-devel
 wget http://www.python.org/ftp/python/2.7.12/Python-2.7.12.tar.xz
 xz -d Python-2.7.12.tar.xz
 tar -xvf Python-2.7.12.tar
